@@ -1,0 +1,23 @@
+task A 
+
+(sleep)
+real	0m1.001s
+user	0m0.000s
+sys	0m0.000s
+
+busy wait (clock_gettime)
+
+real	0m1.001s
+user	0m0.000s
+sys	0m1.004s
+
+
+busy wait (times)
+
+real	0m0.998s
+user	0m0.000s
+sys	0m0.996s
+
+
+The first busy wait uses barely no system time because it is not performing any computation while in the sleep state.
+The busy wait is constantly polling the system time and writing/reading to and from memory. 
