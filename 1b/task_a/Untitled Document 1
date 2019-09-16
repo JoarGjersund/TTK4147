@@ -1,0 +1,15 @@
+task d1
+System run out of ram so it starts using the disk as ram, which is much slower (therefore computer appears to freeze)
+Swap is the space that is used on the disk (swaping inactive pages from ram to disk when ram is full)
+
+task d2
+100: 100% ram used
+1000: 60% ram used
+10000: < 20% ram used
+
+probably has to do with the page size and how the system is only capable of allocating pages of memory, so with smaller x-dimension
+more pages are needed to store the matrix because the full page is not used. 
+
+
+task d3
+when writing zeros to memory we overwrite what is allready there (stuff allocated by the system), so the system freezes because it has to refetch the data from disk.
